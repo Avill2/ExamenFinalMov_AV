@@ -56,11 +56,11 @@ class DetallesConductorActivity : AppCompatActivity() {
         registerForContextMenu(recycler_view_producto)
 
         btnNuevoPokemon.setOnClickListener { v: View? ->
-            irActividdadCrearPokemon()
+            irActividdadCrearAuto()
         }
     }
 
-    fun irActividdadCrearPokemon(){
+    fun irActividdadCrearAuto(){
         val intent = Intent(this, AutoActivity::class.java)
         intent.putExtra("tipo", "Create")
         intent.putExtra("conductorId", conductor?.id!!)
@@ -72,14 +72,6 @@ class DetallesConductorActivity : AppCompatActivity() {
         var producto1 = auto[position]
 
         when (item.itemId) {
-        /*R.id.item_menu_compartir -> {
-            val intent = Intent(Intent.ACTION_SEND)
-            intent.type = "text/html"
-            intent.putExtra(Intent.EXTRA_SUBJECT, "${getString(R.string.autor)} - ${getString(R.string.app_name)}")
-            intent.putExtra(Intent.EXTRA_TEXT, "${getString(R.string.name)} ${autor.nombres} ${autor.direccion}\n${getString(R.string.numero_libros)} ${autor.RUC}\n${getString(R.string.fecha_nacimiento)} ${autor.fechaApertura}")
-            startActivity(intent)
-            return true
-        }*/
             R.id.item_menu_editar -> {
                 val intent = Intent(this, AutoActivity::class.java)
                 intent.putExtra("tipo", "Edit")
