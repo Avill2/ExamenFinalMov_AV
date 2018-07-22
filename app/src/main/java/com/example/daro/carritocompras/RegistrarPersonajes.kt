@@ -40,25 +40,25 @@ class RegistrarPersonajes : AppCompatActivity() {
 
 
       btnCrearEntrenador.setOnClickListener { v: View? ->
-          irEntrenadorActivity()
+          irConductorActivity()
       }
 
         btnListarEntrenador.setOnClickListener { v: View? ->
-            irListarEntrenadorActivity()
+            irListarConductoresActivity()
         }
 
         btnBuscarEntrenador.setOnClickListener { v: View? ->
-            irBuscarEntrenadorActivity()
+            irBuscarConductorActivity()
         }
     }
 
-    fun irEntrenadorActivity(){
+    fun irConductorActivity(){
         val intent = Intent(this, ConductorActivity::class.java)
         intent.putExtra("tipo", "Create")
         startActivity(intent)
     }
 
-    fun irListarEntrenadorActivity(){
+    fun irListarConductoresActivity(){
         val intent = Intent(this, ListarConductoresActivity::class.java)
         startActivity(intent)
     }
@@ -68,7 +68,7 @@ class RegistrarPersonajes : AppCompatActivity() {
         startActivity(intent)
 
     }
-    fun irBuscarEntrenadorActivity(){
+    fun irBuscarConductorActivity(){
         val intent = Intent(this,BuscarConductorActivity::class.java)
         startActivity(intent)
 
