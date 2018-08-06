@@ -24,7 +24,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.example.daro.carritocompras"
+        applicationId "com.example.andrea.conductorautos"
 
         manifestPlaceholders = [
                 onesignal_app_id               : 'd0b6a20c-826d-4fb8-bc14-04762935732f',
