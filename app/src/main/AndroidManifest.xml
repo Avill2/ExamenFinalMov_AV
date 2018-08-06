@@ -43,6 +43,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistrarPersonajes" />
+
         <activity android:name="com.example.andreavillacis.av_exammoviles_iib.Listar.ListarConductoresActivity" />
         <activity android:name="com.example.andreavillacis.av_exammoviles_iib.Detalle.DetallesConductorActivity" />
         <activity android:name=".DeliveryActivity" />
@@ -53,13 +54,16 @@
         <activity android:name="com.example.andreavillacis.av_exammoviles_iib.Detalle.DetallesAutoClienteActivity" />
         <activity android:name=".DatosCompradorActivity" />
         <activity android:name="com.example.andreavillacis.av_exammoviles_iib.Detalle.DetalleOrdenActivity" />
+        <activity android:name="com.example.andreavillacis.av_exammoviles_iib.Auto.AutoActivity" />
+        <activity android:name="com.example.andreavillacis.av_exammoviles_iib.Conductor.ConductorActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
              Note that the API key is linked to the encryption key used to sign the APK.
              You need a different API key for each encryption key, including the release key that is used to
              sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+             com.example.andreavillacis.av_exammoviles_iib.Listar.ListarConductoresActivity
         -->
 
         <activity

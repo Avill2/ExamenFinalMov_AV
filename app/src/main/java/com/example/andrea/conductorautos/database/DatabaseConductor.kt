@@ -61,7 +61,7 @@ class DatabaseConductor{
             val chofer: ArrayList<Conductor> = ArrayList()
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val (request, response, result) = "http://192.168.100.28:1337/Conductor?nombre=${nombre}".httpGet().responseString()
+            val (request, response, result) = "http://172.29.64.47:1337/Conductor?nombre=${nombre}".httpGet().responseString()
             val jsonStringAutor = result.get()
 
             val parser = Parser()
